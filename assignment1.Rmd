@@ -2,7 +2,7 @@
 title: "STAT545B - AssignmentB-1"
 output: github_document
 author: "Yue Shen"
-date: "2021/11/01"
+date: "2021/11/02"
 ---
 
 
@@ -53,9 +53,9 @@ summary_by_group <- function (numeric_vector, group_vector) {
     stop('Sorry, the length of input vector cannot be zero.')
   }
   
-  tibble(numeric_vector, group_vector) %>% drop_na() %>% 
-       group_by(group_vector) %>%
-       summarise(max = max(numeric_vector), min = min(numeric_vector), 
+  dplyr::tibble(numeric_vector, group_vector) %>% drop_na() %>% 
+       dplyr::group_by(group_vector) %>%
+       dplyr::summarise(max = max(numeric_vector), min = min(numeric_vector), 
                 mean = mean(numeric_vector), median = median(numeric_vector))
 }
 
