@@ -8,7 +8,7 @@ date: "2021/11/02"
 
 # Welcome to Yue Shen's assignmentB-1!
 
-Loading data and the tidyverse package below: 
+Loading data, tidyverse, and testthat package below: 
 
 ```{r, message = FALSE}
 suppressPackageStartupMessages(library(datateachr))

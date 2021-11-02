@@ -5,7 +5,7 @@ Yue Shen
 
 # Welcome to Yue Shen’s assignmentB-1!
 
-Loading data and the tidyverse package below:
+Loading data, tidyverse, and testthat package below:
 
 ``` r
 suppressPackageStartupMessages(library(datateachr))
