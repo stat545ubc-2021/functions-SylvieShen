@@ -25,7 +25,7 @@ The goal of yueshen is to get the summary statistics (max, min, mean and median)
 You can install the released version of **yueshen** from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-devtools::install_github("stat545ubc-2021/functions-sylvieshen.git", ref = "0.1.0")
+devtools::install_github("stat545ubc-2021/functions-SylvieShen.git", ref = "0.1.0")
 ```
 
 ## Example
