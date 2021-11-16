@@ -16,7 +16,7 @@ You can install the released version of `yueshen` from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-devtools::install_github("stat545ubc-2021/functions-SylvieShen", ref = "0.1.0", auth_token = "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")
+devtools::install_github("stat545ubc-2021/functions-SylvieShen", ref = "0.1.1", auth_token = "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")
 ```
 
 Please note that the token of the private repo will expire on **Mon, Feb
