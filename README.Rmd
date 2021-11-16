@@ -1,0 +1,46 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# yueshen
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of yueshen is to get the summary statistics (max, min, mean and median) of a numerical variable across the groups of a categorical variable.
+
+## Installation
+
+You can install the released version of **yueshen** from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+devtools::install_github("stat545ubc-2021/functions-sylvieshen.git", ref = "0.1.0")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(yueshen)
+summary_by_group(c(1.5, 7.6, 3.0, 4.7, 8, 8.4), c("A", "C", "A", "B", "B", "A"))
+```
+
+The following example outputs the summary statistics of the numerical variable `diameter` across the groups of `genus_name` in the dataset `vancouver_trees`
+
+```{r}
+summary_by_group(datateachr::vancouver_trees$diameter, datateachr::vancouver_trees$genus_name)
+```
+
+For more information, please refer to the development documentation of function by running ```?summary_by_group``` in the **Console** of **RStudio**.
