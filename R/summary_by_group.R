@@ -37,6 +37,7 @@ summary_by_group <- function (numeric_vector, group_vector) {
     stop('Sorry, the length of input vector cannot be zero.')
   }
 
+
   # Firstly make a tibble with two inputs, drop NA values, then group them by "group_vector", compute the summary statistics.
   dplyr::tibble(numeric_vector, group_vector) %>% tidyr::drop_na() %>%
     dplyr::group_by(group_vector) %>%
